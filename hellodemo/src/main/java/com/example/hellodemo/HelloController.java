@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.hellodemo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ public class HelloController {
 
     @GetMapping("/hello.html")  //表示请求路径
     public @ResponseBody
-    String hello(){
+    String hello() {
         return "Hello，Spring Boot";
     }
 }
